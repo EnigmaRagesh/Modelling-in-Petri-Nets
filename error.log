@@ -1,0 +1,51 @@
+invalid bareword "id"
+in expression "id + 0";
+should be "$id" or "{id}" or "id(...)" or ...
+invalid bareword "id"
+in expression "id + 0";
+should be "$id" or "{id}" or "id(...)" or ...
+    (parsing expression "id + 0")
+    invoked from within
+"expr [lireAttribut $attributs id 0] + $moduloP"
+    (procedure "elementDebut" line 29)
+    invoked from within
+"elementDebut place {label id id 1 lft inf eft 0 initialMarking 0 identifier id}"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 $options(-elementstartcommand) [list $tag $attr] $empty $ns $nsdecls"
+    invoked from within
+"ParseEvent:ElementOpen $tag $param [array get options]"
+    invoked from within
+"::sgml::parseEvent {{} {} {} {} ?xml {} { version="1.0" encoding="UTF-8" ?} {
+} romeo {} { version="Romeo v3.4.3"} { } romeo / {} {
+} TPN {} { name="/..."
+    ("eval" body line 1)
+    invoked from within
+"eval ::sgml::parseEvent [list $tokenised] $parseOptions"
+    (procedure "parse" line 60)
+    invoked from within
+"parse xmlparser3 {<?xml version="1.0" encoding="UTF-8" ?>
+<romeo version="Romeo v3.4.3"> </romeo>
+<TPN name="/home/ragesh/romeo-3.4.3/petrinets/Fischi..."
+    (in namespace inscope "::xml::tclparser" script line 1)
+    invoked from within
+"::namespace inscope ::xml::tclparser parse xmlparser3 {<?xml version="1.0" encoding="UTF-8" ?>
+<romeo version="Romeo v3.4.3"> </romeo>
+<TPN name="/hom..."
+    invoked from within
+"$parser parse $xmldata"
+    (procedure "ouvrirPointXML" line 124)
+    invoked from within
+"ouvrirPointXML $w $c 0 $file"
+    (procedure "ouvrirOnglet" line 29)
+    invoked from within
+"ouvrirOnglet .romeo.global .romeo.global.frame.c"
+    invoked from within
+".romeo.#romeo_menu.#romeo_menu#file invoke active"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke active]"
+    (procedure "tk::MenuInvoke" line 50)
+    invoked from within
+"tk::MenuInvoke .romeo.#romeo_menu.#romeo_menu#file 1"
+    (command bound to event)
