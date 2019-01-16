@@ -3,7 +3,7 @@
 <TPN name="/home/ragesh/romeo-3.4.3/petrinets/Fischier/Fischier_protocol.xml">
   <place id="1" identifier="ready" label="ready" initialMarking="1" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="91" y="241"/> 
+         <position x="121" y="241"/> 
          <deltaLabel deltax="-40.66666666666667" deltay="-9.666666666666686"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -11,7 +11,7 @@
 
   <place id="2" identifier="non_critical" label="non_critical" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="2"> 
-         <position x="241" y="241"/> 
+         <position x="211" y="241"/> 
          <deltaLabel deltax="10" deltay="10"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -19,7 +19,7 @@
 
   <place id="3" identifier="delay_K" label="delay_K" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="391" y="241"/> 
+         <position x="331" y="241"/> 
          <deltaLabel deltax="-3.0" deltay="11.0"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -27,7 +27,7 @@
 
   <place id="4" identifier="read_ID" label="read_ID" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="526" y="241"/> 
+         <position x="451" y="241"/> 
          <deltaLabel deltax="10" deltay="10"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -35,7 +35,7 @@
 
   <place id="5" identifier="critical_section" label="critical_section" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="5"> 
-         <position x="661" y="241"/> 
+         <position x="571" y="241"/> 
          <deltaLabel deltax="10" deltay="10"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -43,7 +43,7 @@
 
   <place id="6" identifier="ready_2" label="ready_2" initialMarking="1" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="91" y="481"/> 
+         <position x="121" y="481"/> 
          <deltaLabel deltax="-47.33333333333333" deltay="-5.666666666666686"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -51,7 +51,7 @@
 
   <place id="7" identifier="non_critical_2" label="non_critical_2" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="2"> 
-         <position x="241" y="481"/> 
+         <position x="211" y="481"/> 
          <deltaLabel deltax="10" deltay="10"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -59,7 +59,7 @@
 
   <place id="8" identifier="delay_K_2" label="delay_K_2" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="391" y="481"/> 
+         <position x="331" y="481"/> 
          <deltaLabel deltax="-3.0" deltay="11.0"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -67,7 +67,7 @@
 
   <place id="9" identifier="read_ID_2" label="read_ID_2" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="526" y="481"/> 
+         <position x="451" y="481"/> 
          <deltaLabel deltax="10" deltay="10"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -75,7 +75,7 @@
 
   <place id="10" identifier="critical_section_2" label="critical_section_2" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="5"> 
-         <position x="661" y="481"/> 
+         <position x="571" y="481"/> 
          <deltaLabel deltax="10" deltay="10"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -103,7 +103,7 @@
 
   <transition id="2" identifier="T2" label="T2"  eft="0" lft="0" lft_param="0" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="316" y="241"/> 
+        <position x="271" y="241"/> 
         <deltaLabel deltax="10.666666666666629" deltay="31.999999999999943"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
         <deltaUpdate deltax="0.0" deltay="-26.0"/> 
@@ -115,7 +115,7 @@
 
   <transition id="3" identifier="T3" label="T3"  eft="2" lft="2" eft_param="2" lft_param="2" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="451" y="241"/> 
+        <position x="391" y="241"/> 
         <deltaLabel deltax="11.333333333333314" deltay="30.66666666666663"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
         <deltaUpdate deltax="20" deltay="10"/> 
@@ -127,7 +127,7 @@
 
   <transition id="4" identifier="T4" label="T4"  eft="0" lft="0" lft_param="0" speed="1" cost="0" unctrl="0" obs="1"  guard="ID #eqeq 1"> 
      <graphics color="0"> 
-        <position x="586" y="241"/> 
+        <position x="511" y="241"/> 
         <deltaLabel deltax="9.0" deltay="32.66666666666663"/> 
         <deltaGuard deltax="2.0" deltay="-29.0"/> 
         <deltaUpdate deltax="20" deltay="10"/> 
@@ -139,7 +139,7 @@
 
   <transition id="5" identifier="reset" label="reset"  eft="0" lft="inf" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="751" y="241"/> 
+        <position x="631" y="241"/> 
         <deltaLabel deltax="39.33333333333337" deltay="7.333333333333314"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
         <deltaUpdate deltax="37.33333333333337" deltay="-9.0"/> 
@@ -175,7 +175,7 @@
 
   <transition id="8" identifier="T6" label="T6"  eft="0" lft="0" lft_param="0" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="316" y="481"/> 
+        <position x="271" y="481"/> 
         <deltaLabel deltax="13.666666666666629" deltay="28.66666666666663"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
         <deltaUpdate deltax="0.0" deltay="-26.0"/> 
@@ -187,7 +187,7 @@
 
   <transition id="9" identifier="T7" label="T7"  eft="2" lft="2" eft_param="2" lft_param="2" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="451" y="481"/> 
+        <position x="391" y="481"/> 
         <deltaLabel deltax="26.33333333333337" deltay="31.66666666666663"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
         <deltaUpdate deltax="20" deltay="10"/> 
@@ -199,7 +199,7 @@
 
   <transition id="10" identifier="T8" label="T8"  eft="0" lft="0" lft_param="0" speed="1" cost="0" unctrl="0" obs="1"  guard="ID #eqeq 2"> 
      <graphics color="0"> 
-        <position x="586" y="481"/> 
+        <position x="511" y="481"/> 
         <deltaLabel deltax="12.0" deltay="29.666666666666515"/> 
         <deltaGuard deltax="2.0" deltay="-29.0"/> 
         <deltaUpdate deltax="20" deltay="10"/> 
@@ -211,7 +211,7 @@
 
   <transition id="11" identifier="reset_2" label="reset_2"  eft="0" lft="inf" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="751" y="481"/> 
+        <position x="631" y="481"/> 
         <deltaLabel deltax="47.0" deltay="6.000000000000057"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
         <deltaUpdate deltax="43.0" deltay="-10.333333333333371"/> 
@@ -293,13 +293,13 @@
  
 
   <arc place="1" transition="5" type="TransitionPlace" weight="1"> 
-     <nail xnail="585.0" ynail="158.0"/> 
+     <nail xnail="482.1111111111111" ynail="162.33333333333334"/> 
      <graphics  color="0"> 
      </graphics> 
   </arc> 
 
   <arc place="4" transition="6" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
-    <nail xnail="435.0" ynail="171.0"/> 
+    <nail xnail="390.5555555555556" ynail="171.44444444444446"/> 
     <graphics  color="0"> 
      </graphics> 
   </arc> 
@@ -371,13 +371,13 @@
  
 
   <arc place="6" transition="11" type="TransitionPlace" weight="1"> 
-     <nail xnail="591.0" ynail="397.33333333333337"/> 
+     <nail xnail="477.8888888888889" ynail="399.44444444444457"/> 
      <graphics  color="0"> 
      </graphics> 
   </arc> 
 
   <arc place="9" transition="12" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
-    <nail xnail="441.0" ynail="410.33333333333337"/> 
+    <nail xnail="364.4444444444445" ynail="406.55555555555566"/> 
     <graphics  color="0"> 
      </graphics> 
   </arc> 

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<romeo version="Romeo v3.4.3"> </romeo>
+<TPN name="/home/ragesh/romeo-3.4.3/petrinets/mutual_exclusion.xml">
+  <place id="1" identifier="P1" label="Proccess_1" initialMarking="1" eft="0" lft="inf"> 
+      <graphics color="3"> 
+         <position x="571" y="136"/> 
+         <deltaLabel deltax="-58" deltay="-9"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
+  <place id="2" identifier="P2" label="Process_2" initialMarking="1" eft="0" lft="inf"> 
+      <graphics color="3"> 
+         <position x="571" y="586"/> 
+         <deltaLabel deltax="-64" deltay="-3"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
+  <place id="3" identifier="P3" label="Criticalsection" initialMarking="0" eft="0" lft="inf"> 
+      <graphics color="5"> 
+         <position x="571" y="361"/> 
+         <deltaLabel deltax="69" deltay="-8"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
+  <place id="4" identifier="P4" label="Turn" initialMarking="1" eft="0" lft="inf"> 
+      <graphics color="0"> 
+         <position x="466" y="361"/> 
+         <deltaLabel deltax="10" deltay="10"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
+  <place id="5" identifier="P5" label="Flag_0" initialMarking="0" eft="0" lft="inf"> 
+      <graphics color="0"> 
+         <position x="571" y="271"/> 
+         <deltaLabel deltax="10" deltay="10"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
+  <place id="6" identifier="P6" label="Flag_1" initialMarking="0" eft="0" lft="inf"> 
+      <graphics color="0"> 
+         <position x="571" y="451"/> 
+         <deltaLabel deltax="10" deltay="10"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
+  <transition id="1" identifier="T1" label="T1"  eft="0" lft="2" lft_param="2" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
+     <graphics color="0"> 
+        <position x="571" y="331"/> 
+        <deltaLabel deltax="57.66666666666674" deltay="-61.333333333333314"/> 
+        <deltaGuard deltax="20" deltay="-20"/> 
+        <deltaUpdate deltax="20" deltay="10"/> 
+        <deltaSpeed deltax="-20" deltay="5"/> 
+        <deltaCost deltax="-20" deltay="5"/> 
+     </graphics> 
+     <update><![CDATA[]]></update> 
+  </transition> 
+
+  <transition id="2" identifier="T2" label="T2"  eft="3" lft="5" eft_param="3" lft_param="5" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
+     <graphics color="0"> 
+        <position x="571" y="406"/> 
+        <deltaLabel deltax="49.0" deltay="-2.6666666666667425"/> 
+        <deltaGuard deltax="20" deltay="-20"/> 
+        <deltaUpdate deltax="20" deltay="10"/> 
+        <deltaSpeed deltax="-20" deltay="5"/> 
+        <deltaCost deltax="-20" deltay="5"/> 
+     </graphics> 
+     <update><![CDATA[]]></update> 
+  </transition> 
+
+  <transition id="3" identifier="T3" label="T3"  eft="2" lft="4" eft_param="2" lft_param="4" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
+     <graphics color="0"> 
+        <position x="571" y="211"/> 
+        <deltaLabel deltax="25" deltay="0"/> 
+        <deltaGuard deltax="20" deltay="-20"/> 
+        <deltaUpdate deltax="20" deltay="10"/> 
+        <deltaSpeed deltax="-20" deltay="5"/> 
+        <deltaCost deltax="-20" deltay="5"/> 
+     </graphics> 
+     <update><![CDATA[]]></update> 
+  </transition> 
+
+  <transition id="4" identifier="T4" label="T4"  eft="5" lft="6" eft_param="5" lft_param="6" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
+     <graphics color="0"> 
+        <position x="571" y="496"/> 
+        <deltaLabel deltax="25" deltay="0"/> 
+        <deltaGuard deltax="20" deltay="-20"/> 
+        <deltaUpdate deltax="20" deltay="10"/> 
+        <deltaSpeed deltax="-20" deltay="5"/> 
+        <deltaCost deltax="-20" deltay="5"/> 
+     </graphics> 
+     <update><![CDATA[]]></update> 
+  </transition> 
+
+  <arc place="1" transition="1" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
+    <nail xnail="507.0" ynail="241.0"/> 
+    <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+ 
+
+  <arc place="4" transition="1" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
+    <nail xnail="505.6666666666667" ynail="322.66666666666663"/> 
+    <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+ 
+
+  <arc place="3" transition="1" type="TransitionPlace" weight="1"> 
+     <nail xnail="0" ynail="0"/> 
+     <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+
+  <arc place="5" transition="1" type="TransitionPlace" weight="1"> 
+     <nail xnail="0" ynail="0"/> 
+     <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+
+  <arc place="2" transition="2" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
+    <nail xnail="501.33333333333337" ynail="487.0"/> 
+    <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+ 
+
+  <arc place="4" transition="2" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
+    <nail xnail="501.6666666666667" ynail="402.0"/> 
+    <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+ 
+
+  <arc place="3" transition="2" type="TransitionPlace" weight="1"> 
+     <nail xnail="0" ynail="0"/> 
+     <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+
+  <arc place="6" transition="2" type="TransitionPlace" weight="1"> 
+     <nail xnail="0" ynail="0"/> 
+     <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+
+  <arc place="3" transition="3" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
+    <nail xnail="655.0" ynail="277.0"/> 
+    <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+ 
+
+  <arc place="5" transition="3" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
+    <nail xnail="0" ynail="0"/> 
+    <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+ 
+
+  <arc place="1" transition="3" type="TransitionPlace" weight="1"> 
+     <nail xnail="0" ynail="0"/> 
+     <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+
+  <arc place="4" transition="3" type="TransitionPlace" weight="1"> 
+     <nail xnail="499.00000000000006" ynail="253.66666666666674"/> 
+     <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+
+  <arc place="3" transition="4" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
+    <nail xnail="651.6666666666666" ynail="434.0"/> 
+    <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+ 
+
+  <arc place="6" transition="4" type="PlaceTransition" weight="1"  inhibitingCondition=""> 
+    <nail xnail="0" ynail="0"/> 
+    <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+ 
+
+  <arc place="2" transition="4" type="TransitionPlace" weight="1"> 
+     <nail xnail="0" ynail="0"/> 
+     <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+
+  <arc place="4" transition="4" type="TransitionPlace" weight="1"> 
+     <nail xnail="495.66666666666663" ynail="453.66666666666663"/> 
+     <graphics  color="0"> 
+     </graphics> 
+  </arc> 
+
+  <timedCost></timedCost>
+
+  <declaration><![CDATA[// insert here your type definitions using C-like syntax
+
+
+// insert here your function definitions 
+// using C-like syntax
+]]></declaration>
+
+  <initialization><![CDATA[// insert here the state variables declarations 
+// and possibly some code to initialize them 
+// using C-like syntax
+]]></initialization>
+
+  <preferences> 
+      <colorPlace  c0="SkyBlue2"  c1="gray"  c2="cyan"  c3="green"  c4="yellow"  c5="brown" /> 
+ 
+      <colorTransition  c0="yellow"  c1="gray"  c2="cyan"  c3="green"  c4="SkyBlue2"  c5="brown" /> 
+ 
+      <colorArc  c0="black"  c1="gray"  c2="blue"  c3="#beb760"  c4="#be5c7e"  c5="#46be90" /> 
+ 
+  </preferences> 
+ </TPN> 
+

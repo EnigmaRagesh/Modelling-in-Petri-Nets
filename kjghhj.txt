@@ -1,0 +1,1 @@
+AG (ZB <=1 and robotB <=1  and markingBounded(3))
