@@ -361,7 +361,8 @@
 
   <initialization><![CDATA[// insert here the state variables declarations 
 // and possibly some code to initialize them 
-// using C-like syntax]]></initialization>
+// using C-like syntax
+]]></initialization>
 
   <preferences> 
       <colorPlace  c0="SkyBlue2"  c1="gray"  c2="cyan"  c3="green"  c4="yellow"  c5="brown" /> 

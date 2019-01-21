@@ -17,9 +17,17 @@
       <scheduling gamma="0" omega="0"/> 
   </place> 
 
+  <place id="3" identifier="turn" label="turn" initialMarking="0" eft="0" lft="inf"> 
+      <graphics color="0"> 
+         <position x="241" y="91"/> 
+         <deltaLabel deltax="10" deltay="10"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
   <place id="4" identifier="CS_1" label="CS_1" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="181" y="421"/> 
+         <position x="181" y="346"/> 
          <deltaLabel deltax="35.333333333333314" deltay="-8.0"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -27,7 +35,7 @@
 
   <place id="5" identifier="idle2" label="idle2" initialMarking="1" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="496" y="166"/> 
+         <position x="511" y="166"/> 
          <deltaLabel deltax="37.66666666666663" deltay="-7.333333333333314"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
@@ -35,16 +43,32 @@
 
   <place id="6" identifier="want2" label="want2" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="496" y="256"/> 
+         <position x="511" y="256"/> 
          <deltaLabel deltax="35.33333333333337" deltay="-13.333333333333314"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
+  <place id="7" identifier="req1" label="req1" initialMarking="0" eft="0" lft="inf"> 
+      <graphics color="0"> 
+         <position x="346" y="91"/> 
+         <deltaLabel deltax="10" deltay="10"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
   </place> 
 
   <place id="8" identifier="CS_2" label="CS_2" initialMarking="0" eft="0" lft="inf"> 
       <graphics color="0"> 
-         <position x="496" y="421"/> 
+         <position x="511" y="346"/> 
          <deltaLabel deltax="34.0" deltay="-7.0"/> 
+      </graphics> 
+      <scheduling gamma="0" omega="0"/> 
+  </place> 
+
+  <place id="9" identifier="req2" label="req2" initialMarking="0" eft="0" lft="inf"> 
+      <graphics color="0"> 
+         <position x="451" y="91"/> 
+         <deltaLabel deltax="10" deltay="10"/> 
       </graphics> 
       <scheduling gamma="0" omega="0"/> 
   </place> 
@@ -54,7 +78,7 @@
         <position x="181" y="211"/> 
         <deltaLabel deltax="25" deltay="0"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
-        <deltaUpdate deltax="66.66666666666669" deltay="-16.666666666666686"/> 
+        <deltaUpdate deltax="63.44444444444446" deltay="-17.888888888888914"/> 
         <deltaSpeed deltax="-20" deltay="5"/> 
         <deltaCost deltax="-20" deltay="5"/> 
      </graphics> 
@@ -66,7 +90,7 @@ turn = 2;]]></update>
      <graphics color="0"> 
         <position x="181" y="301"/> 
         <deltaLabel deltax="26.666666666666657" deltay="-6.000000000000057"/> 
-        <deltaGuard deltax="98.0" deltay="-1.9999999999999432"/> 
+        <deltaGuard deltax="102.88888888888891" deltay="-8.888888888888857"/> 
         <deltaUpdate deltax="66.66666666666669" deltay="-7.666666666666686"/> 
         <deltaSpeed deltax="-20" deltay="5"/> 
         <deltaCost deltax="-20" deltay="5"/> 
@@ -76,10 +100,10 @@ turn = 2;]]></update>
 
   <transition id="4" identifier="T4" label="T4"  eft="0" lft="inf" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="181" y="451"/> 
+        <position x="181" y="391"/> 
         <deltaLabel deltax="25" deltay="0"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
-        <deltaUpdate deltax="64.33333333333329" deltay="3.333333333333428"/> 
+        <deltaUpdate deltax="62.4444444444444" deltay="-0.6666666666665719"/> 
         <deltaSpeed deltax="-20" deltay="5"/> 
         <deltaCost deltax="-20" deltay="5"/> 
      </graphics> 
@@ -88,10 +112,10 @@ turn = 2;]]></update>
 
   <transition id="5" identifier="T5" label="T5"  eft="0" lft="inf" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="496" y="211"/> 
+        <position x="511" y="211"/> 
         <deltaLabel deltax="27.0" deltay="-8.666666666666629"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
-        <deltaUpdate deltax="-59.33333333333303" deltay="-16.333333333333286"/> 
+        <deltaUpdate deltax="-52.666666666666345" deltay="-16.999999999999943"/> 
         <deltaSpeed deltax="-20" deltay="5"/> 
         <deltaCost deltax="-20" deltay="5"/> 
      </graphics> 
@@ -101,9 +125,9 @@ turn = 1;]]></update>
 
   <transition id="6" identifier="T6" label="T6"  eft="0" lft="inf" speed="1" cost="0" unctrl="0" obs="1"  guard="turn #eqeq 2 or req1 #eqeq 0"> 
      <graphics color="0"> 
-        <position x="496" y="301"/> 
+        <position x="511" y="301"/> 
         <deltaLabel deltax="36.66666666666657" deltay="-6.333333333333371"/> 
-        <deltaGuard deltax="-75.33333333333348" deltay="-2.3333333333333712"/> 
+        <deltaGuard deltax="-82.55555555555571" deltay="-8.777777777777828"/> 
         <deltaUpdate deltax="79.6666666666668" deltay="-9.666666666666686"/> 
         <deltaSpeed deltax="-20" deltay="5"/> 
         <deltaCost deltax="-20" deltay="5"/> 
@@ -113,10 +137,10 @@ turn = 1;]]></update>
 
   <transition id="8" identifier="T8" label="T8"  eft="0" lft="inf" speed="1" cost="0" unctrl="0" obs="1"  guard=""> 
      <graphics color="0"> 
-        <position x="496" y="451"/> 
+        <position x="511" y="391"/> 
         <deltaLabel deltax="32.0" deltay="5.3333333333332575"/> 
         <deltaGuard deltax="20" deltay="-20"/> 
-        <deltaUpdate deltax="-45.666666666666686" deltay="4.666666666666686"/> 
+        <deltaUpdate deltax="-44.33333333333337" deltay="0.22222222222222854"/> 
         <deltaSpeed deltax="-20" deltay="5"/> 
         <deltaCost deltax="-20" deltay="5"/> 
      </graphics> 
@@ -157,7 +181,7 @@ turn = 1;]]></update>
  
 
   <arc place="1" transition="4" type="TransitionPlace" weight="1"> 
-     <nail xnail="121.66666666666666" ynail="309.3333333333333"/> 
+     <nail xnail="117.55555555555554" ynail="276.77777777777777"/> 
      <graphics  color="0"> 
      </graphics> 
   </arc> 
@@ -196,7 +220,7 @@ turn = 1;]]></update>
  
 
   <arc place="5" transition="8" type="TransitionPlace" weight="1"> 
-     <nail xnail="573.6666666666667" ynail="302.3333333333333"/> 
+     <nail xnail="586.8888888888894" ynail="277.2222222222222"/> 
      <graphics  color="0"> 
      </graphics> 
   </arc> 
@@ -215,6 +239,7 @@ turn = 1;]]></update>
 int req1 = 0;
 int req2 = 0;
 int  turn = 0;
+
 
 
 
